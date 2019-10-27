@@ -1,0 +1,82 @@
+<!-- Beginning procedures -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Creating prereqs for page -->
+<head>
+  <meta charset="UTF-8">
+  <title>Lati-Dash</title>
+
+  <!-- Linking in the Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Linking style.css -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<!-- Lets start with the NavBar -->
+	<div class="masternav">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="active" href="Lati-Dash.html">LATIDASH!</a>
+			<div class="dropdown">
+				<button class="dropbtn">Plots</button>
+				<div class="dropdown-content">
+					<a class="drop-link" href="maxtemperature.html">Max Temperature</a>
+					<a class="drop-link" href="cloudiness.html">Cloudiness</a>
+					<a class="drop-link" href="humidity.html">Humidity</a>
+					<a class="drop-link" href="windspeed.html">Wind Speed</a>
+				</div>
+			</div>
+			<a class="nav-link" href="comparison.html">Comparisons</a>
+			<a class="nav-link" href="dataset.html">Datasets</a>
+		</nav>
+  </div>
+  <!-- Beginning the Contents -->
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <h3 class="title">Comparison: Latitude vs. X</h3>
+        <hr>
+        <p>Select from the graphs below to view the analysis:</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="title">vs. Max Temperature</div>
+              <a href="maxtemperature.html">
+                <img class="panel" src="../Figures/latvstemp.png"
+                alt="Max Temperature Image">
+              </a>
+            </div>
+            <div class="col-lg-7">
+              <div class="title">vs. Cloudiness</div>
+              <a href="cloudiness.html">
+                <img class="panel" src="../Figures/latvscloud.png"
+                alt="Cloudiness Image">
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="title">vs. Humidity</div>
+              <a href="humidity.html">
+                <img class="panel" src="../Figures/latvshum.png"
+                alt="Humidity Image">
+              </a>
+            </div>
+            <div class="col-lg-7">
+              <div class="title">vs. Wind Speed</div>
+              <a href="windspeed.html">
+                <img class="panel" src="../Figures/latvswind.png"
+                alt="Wind Speed Image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
